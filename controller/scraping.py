@@ -19,7 +19,7 @@ def getContent():
         dataNama.append(nama.text)
         dataJumlah.append(jumlah.text)
 
-    data = {'Bahasa Pemrograman': dataNama, 'Jumlah Pertanyaan': dataJumlah}
-    df = pd.DataFrame(data)
-    print(df)
+    #data = {'Bahasa Pemrograman': dataNama, 'Jumlah Pertanyaan': dataJumlah}
+    #df = pd.DataFrame(data)
+    #print(df)
     return obj
