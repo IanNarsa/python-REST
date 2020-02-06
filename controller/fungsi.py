@@ -1,9 +1,7 @@
+from flask_restful import Resource
 from flask import Flask, jsonify, request
-from flask_pymongo import PyMongo
-from flask_restful import Resource, Api, reqparse
 import sys
 sys.path.append("..")
-import json
 from configapi.dbconfig import configdb
 from datetime import datetime
 
