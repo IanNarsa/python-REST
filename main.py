@@ -1,4 +1,4 @@
-from controller.fungsi import File, Anotherfile
+from controller.fungsi import File, Anotherfile, Masterdata
 from flask import Flask, jsonify, request
 from flask_restful import Resource, Api, reqparse
 
@@ -7,9 +7,10 @@ api = Api(app)
 
 parser = reqparse.RequestParser()
 
+api.add_resource(Masterdata, '/getcontent')
 api.add_resource(File, '/', '/update')
 api.add_resource(Anotherfile,'/name/<id>')
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port=5000)
+    app.run(debug=True, host='127.0.0.1', port=4000)
