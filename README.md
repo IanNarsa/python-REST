@@ -27,3 +27,4 @@ payload prediksi :
 ```
 '/getcontent/stackoverflow'
 
+note : prototype version
