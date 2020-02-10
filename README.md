@@ -25,6 +25,10 @@ payload prediksi :
         "sks4": "18"
     }
 ```
+Hasil prediksi terdiri dari :
+T  : Tepat Waktu
+TT : Tidak Tepat Waktu
+
 '/getcontent/stackoverflow'
 
 note : prototype version

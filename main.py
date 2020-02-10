@@ -1,4 +1,4 @@
-from controller.fungsi import Masterdata,CariMahasiswa
+from controller.fungsi import Masterdata,CariMahasiswa,Grafik
 from controller.prediksiV1 import Mahasiswa
 from flask import Flask, jsonify, request
 from flask_restful import Resource, Api, reqparse
@@ -11,6 +11,7 @@ parser = reqparse.RequestParser()
 api.add_resource(CariMahasiswa, '/nim/<id>')
 api.add_resource(Mahasiswa, '/prediksi')
 api.add_resource(Masterdata, '/getcontent/stackoverflow')
+api.add_resource(Grafik, '/grafik')
 
 
 if __name__ == '__main__':

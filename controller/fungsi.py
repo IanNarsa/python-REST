@@ -1,6 +1,7 @@
 from flask_restful import Resource
 from flask import Flask, jsonify, request
 from controller.scraping import getContent
+
 import sys
 sys.path.append("..")
 from configapi.dbconfig import configdb
@@ -54,3 +55,8 @@ class CariMahasiswa(Resource):
         data.append('notfound')
     
     return jsonify({"result":data})
+
+  
+class Grafik(Resource):
+  def get(self):
+    return 0
